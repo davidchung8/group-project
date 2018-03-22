@@ -1,0 +1,34 @@
+#include "skilltree.h"
+
+skilltree::skilltree()
+{
+    newHealthTree = 0;
+    newAttackTree = 0;
+    newMagicTree = 0;
+    //ctor
+}
+
+skilltree::skilltree(int healthTree, int attackTree, int magicTree){
+newHealthTree = healthTree;
+newAttackTree = attackTree;
+newMagicTree = magicTree;
+
+}
+
+skilltree::~skilltree()
+{
+    //dtor
+}
+
+
+int skilltree::getattackTree(){
+return newAttackTree;
+}
+
+int skilltree::gethealthTree(){
+return newHealthTree;
+}
+
+int skilltree::getmagicTree(){
+return newMagicTree;
+}
