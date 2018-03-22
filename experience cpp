@@ -1,0 +1,35 @@
+#include "exp.h"
+
+
+
+exp::exp()
+{
+    newLevel = 0;
+    newExperience = 0;
+
+    //ctor
+}
+
+exp::exp(int level, int experience)
+{
+    newLevel = level;
+    newExperience = experience;
+
+}
+
+exp::~exp()
+{
+    //dtor
+}
+
+int exp::getLevel(){
+    return newLevel;
+
+}
+
+int exp::getExperience(){
+    return newExperience;
+
+}
+
+
