@@ -1,0 +1,33 @@
+#include <iostream>
+#include "skilltree.h"
+
+using namespace std;
+
+int main()
+{
+
+    int healthTree;
+    int attackTree;
+    int magicTree;
+
+    cout << "Enter Health Tree Level" << endl;
+    cin >> healthTree;
+
+    cout << "Enter Attack Tree Level" << endl;
+    cin >> attackTree;
+
+    cout << "Enter Magic Tree Level" << endl;
+    cin >> magicTree;
+
+    skilltree Player_1(healthTree, attackTree, magicTree);
+
+    cout << endl << "Your Magic Tree level is: " << Player_1.getmagicTree() << endl <<
+    "Attack Tree: " << Player_1.getattackTree() << endl <<
+    "Health Tree: " << Player_1.gethealthTree() << endl;
+
+    int a;
+    cin >> a;
+
+
+    return 0;
+}
