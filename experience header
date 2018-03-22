@@ -1,0 +1,35 @@
+#include <iostream>
+
+#ifndef EXP_H
+#define EXP_H
+
+using namespace std;
+
+
+class exp
+{
+    public:
+        //Default Constructor
+        exp();
+
+        //Overload Constructor
+        exp(int,int);
+
+        //Default Deconstructor
+        ~exp();
+
+
+        //Accessor Functions
+        int getLevel();
+        int getExperience();
+
+
+    protected:
+
+    private:
+            int newLevel;
+            int newExperience;
+
+};
+
+#endif // EXP_H
