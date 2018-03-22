@@ -1,0 +1,44 @@
+#include <iostream>
+#include "exp.h"
+
+using namespace std;
+
+int main()
+{
+
+    int level;
+    int experience;
+
+    cout << "enter level\n";
+    cin >> level;
+
+    cout << "enter exp\n";
+    cin >> experience;
+
+    exp Player_1(level,experience);
+
+    cout << endl << "Level: " << Player_1.getLevel() << endl <<
+    "Exp: " << Player_1.getExperience() << endl;
+
+
+    cout << "enter level\n";
+    cin >> level;
+
+    cout << "enter exp\n";
+    cin >> experience;
+
+    exp Player_2(level,experience);
+
+    cout << endl << "Level: " << Player_2.getLevel() << endl <<
+    "Exp: " << Player_2.getExperience() << endl;
+
+    cout << endl << "Level: " << Player_1.getLevel() << endl <<
+    "Exp: " << Player_1.getExperience() << endl;
+
+    int a;
+    cin >> a;
+
+
+
+    return 0;
+}
