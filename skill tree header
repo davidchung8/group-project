@@ -1,0 +1,35 @@
+#include <iostream>
+
+#ifndef SKILLTREE_H
+#define SKILLTREE_H
+
+
+
+class skilltree
+{
+    public:
+        //Default Constructor
+        skilltree();
+
+        //Overload Constructor
+        skilltree(int,int,int);
+
+        //Default De-constructor
+        ~skilltree();
+
+        //Accessor Functions
+        int gethealthTree();
+        int getattackTree();
+        int getmagicTree();
+
+
+
+    protected:
+
+    private:
+        int newHealthTree;
+        int newAttackTree;
+        int newMagicTree;
+};
+
+#endif // SKILLTREE_H
